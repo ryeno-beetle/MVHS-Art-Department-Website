@@ -34,7 +34,6 @@ class Gallery extends Component {
     // called automatically when page loads for the first time after the constructor
     componentDidMount() {
       // specific urls for artwork and text on gallery page
-      console.log('reading spreadsheet');
       const galleryUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSPkAuoxJT5yJ6gjQto-7jOJ-mFvcpPiWq7lGgVTlohJ7kEz-B44RXlwfY2smkzSe0STeNb8sbSsmj4/pub?output=tsv';
       const coursesUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTSBt1H98J_Ld1YQtpmMGLU3kj85o05Vr9PKdgDAJ_IE2VtMEFFno7x9BmovWakBgbCf0qKNk_uTwwx/pub?output=tsv';
   

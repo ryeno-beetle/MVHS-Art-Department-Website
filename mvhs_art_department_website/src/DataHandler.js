@@ -31,8 +31,15 @@ export function setDataTSV(data, labels, indices, rows = -1) {
             for (let j = 0; j < labels.length; j++) {
                 if (labels[j] === 'src') {
                     // if we are dealing with a google drive img url, handle it
-                    const driveUrl = rowData[indices[j]].split('=') // split url to get img id
-                    obj[labels[j]] = 'https://lh3.googleusercontent.com/d/' + driveUrl[1];
+                    // split url to get img id
+                    const driveUrl = rowData[indices[j]];
+                    let imgID;
+                    if (driveUrl.includes("id=")) {
+                        imgID = driveUrl.split('=')[1];
+                    } else {
+                        imgID = driveUrl.split('/')[5];
+                    }
+                    obj[labels[j]] = 'https://lh3.googleusercontent.com/d/' + imgID;
                 } else if (labels[j] === 'text') {
                     // if we are dealing with text, handle multiple paragraphs in an array
                     // get the rest of rowData, store it in textArr
