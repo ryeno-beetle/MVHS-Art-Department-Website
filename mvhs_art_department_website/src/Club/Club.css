@@ -1,0 +1,37 @@
+.club {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.imgNdesc {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.imgNdesc img{
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+    object-position: top;
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.imgNdesc > * {
+    flex: 1;
+    margin: 10px;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: rgb(251, 229, 131) !important;
+    color: inherit;
+  }
+
+button.accordion-button:focus{
+    box-shadow: inherit;
+}
+

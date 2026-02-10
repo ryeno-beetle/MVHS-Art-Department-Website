@@ -1,0 +1,44 @@
+.carousel-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 80vh;
+}
+
+.image-carousel {
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    text-align: center;
+}
+
+.active.carousel-item {
+    width: 100%;
+    height: 80vh;
+}
+
+.carousel-item-prev.carousel-item-end.carousel-item {
+    width: 100%;
+    height: 80vh;
+}
+
+.carousel-item-next.carousel-item-start.carousel-item {
+    width: 100%;
+    height: 80vh;
+}
+
+.image {
+    height: 100%;
+    width: auto;
+    padding: inherit;
+    margin:auto;
+    display: block;
+    object-fit: contain;
+}
+
+.caption {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    text-align: center;
+}
