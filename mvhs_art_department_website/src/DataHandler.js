@@ -34,6 +34,7 @@ export function setDataTSV(data, labels, indices, rows = -1) {
                     // split url to get img id
                     const driveUrl = rowData[indices[j]];
                     let imgID;
+                    // check for different formats of links provided (there are two variations used)
                     if (driveUrl.includes("id=")) {
                         imgID = driveUrl.split('=')[1];
                     } else {
